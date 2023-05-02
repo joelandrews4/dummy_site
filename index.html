@@ -1,13 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
+    <meta charset="utf-8">
+    <title>Welcome to my app</title>
+    <script>
+        var redirectToApp = function () {
+            document.location = 'jargone.testing://example.com';
+        };
+
+        window.onload = redirectToApp;
+    </script>
 </head>
 
 <body>
-    <h1>Home</h1>
+    You don't have the app installed.
 </body>
 
 </html>
