@@ -7,17 +7,17 @@
     <title>Welcome to my app</title>
     <script>
         var redirectToApp = function () {
-            document.location = 'jargone.testing://example.com';
+            document.location = 'myscheme:someaction';
         };
 
-        //window.onload = redirectToApp;
+        window.onload = redirectToApp;
     </script>
 </head>
 
 <body>
-    <script>
-        document.write("The current URL is: " + window.location.href);
-    </script>
+    You don't have the app installed.
+
+    document.write("The current URL is: " + window.location.href);
 </body>
 
 </html>
