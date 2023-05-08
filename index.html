@@ -6,11 +6,13 @@
     <meta charset="utf-8">
     <title>Welcome to my app</title>
     <script>
-        var redirectToApp = function () {
-            document.location = 'jargonetesting://authenticated';
+        var redirectToApp = function (code) {
+            document.location = 'jargonetesting://authenticated/' + code;
         };
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
 
-        window.onload = redirectToApp;
+        window.onload = redirectToApp(code);
     </script>
 </head>
 
