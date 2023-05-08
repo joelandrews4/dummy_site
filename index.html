@@ -1,25 +1,37 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Welcome to my app</title>
-    <script>
-        var redirectToApp = function () {
-            document.location = 'jargonetesting:authenticated';
-        };
+    <title>Redirect Example</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
 
-        window.onload = redirectToApp;
-    </script>
+        button {
+            font-size: 24px;
+            padding: 20px 40px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0069d9;
+        }
+    </style>
 </head>
 
 <body>
-    You don't have the app installed.
-
-    <script>
-        document.write("The current URL is: " + window.location.href);
-    </script>
+    <button onclick="window.location.href='jargonetesting:authenticated'">
+        Redirect back to app
+    </button>
 </body>
 
 </html>
